@@ -358,7 +358,14 @@ input, select, textarea {
     border-radius: 8px;  /* optional, looks cleaner */
 }
 
+.react-project {
+	text-align: center;
 
+}
+
+.react-project .actions-special{
+	justify-content: center;
+}
 /* Row */
 
 	.row {
