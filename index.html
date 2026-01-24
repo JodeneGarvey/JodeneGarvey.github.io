@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -29,10 +30,12 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
+			
 							<li><a href="#intro" class="active">Introduction</a></li>
 							<li><a href="#first">Web Projects</a></li>
 							<li><a href="#second">Data Analysis Projects</a></li>
 							<li><a href="#cta">Certificates/Achievements</a></li>
+						
 						</ul>
 					</nav>
 
@@ -72,7 +75,8 @@
 										<h3>E-commerce Pet Store</h3>
 										<p>PetPaw is a full-stack ASP.NET Core web app built with C#, SQL & Bootstrap.
 											The application allow user to create an account and purchase products for their pets using cash and credit or debit card. 
-											It also includes an admin dashboard where the owner of the website can see all orders made, add products to the system and assign roles to users. </p>
+											It also includes an admin dashboard where the owner of the website can see all orders made, add products to the system and 
+											assign roles to different users. </p>
 											
 											<a href="https://youtu.be/EHGIMnuORfg" 
            									target="_blank" 
@@ -87,57 +91,40 @@
 											<img src="images/bag.jpg" alt="bag logo" class="project-img">
 										</a>
 										<h3>E-commerce Bag Store</h3>
-										<p>Developed a responsive ASP.NET Core app for online purchases of bags.
-											Built using C#, HTML/CSS, JavaScript, and SQL. 
-											Contains an admin dashboard where the owner of the 
+										<p>Online Bag Store is a fully developed responsive ASP.NET Core app for online purchases of different bags.
+											Application was built using C#, HTML/CSS, Bootstrap, JavaScript, and SQL. 
+											It contains an admin dashboard where approved users of the 
 											website can see all orders made, add products to the 
-											system and asign roles to users.</p>
+											website, assign roles to different users.</p>
+
+											<a href="#" 
+           									target="_blank" 
+           									class="button">
+           										View Demo
+        									</a>
 											
 									</li>
 									<li>
-										<a href="https://github.com/JodeneGarvey/E-Commerce-Car-Rental/tree/Milestone3" >
-											<img src="images/car logo.jpg" alt="car logo" class="project-img">
+										<a href="https://github.com/JodeneGarvey/Juicy" >
+											<img src="images/colored-logo.png" alt="Juicy logo" class="project-img">
 										</a>
-										<h3>E-commerce Car Rental </h3>
-										<p>An ASP.NET MVC-based system for booking cars to rent. 
-											Built using C#, HTML/CSS, JavaScript, and SQL. 
-											Includes an admin dashboard for the management of rentals.</p>
+										<h3>E-commerce Juice Store </h3>
+										<p>Juicy is a fully developed responsive ASP.NET Core app for online purchases of different juices.
+											Application was built using C#, HTML/CSS, Bootstrap, JavaScript, and SQL. 
+											It contains an admin dashboard where approved users of the 
+											website can see all orders made, add products to the 
+											website, assign roles to different users and see the revenue of the sales.</p>
+
+											<a href="https://youtu.be/W14F4zhViDY" 
+           									target="_blank" 
+           									class="button">
+           										View Demo
+        									</a>
 										
 									</li>
 									<br>
-									<section class="react-project">
-									<header class="major">
-									<h3>ReactJS TV Show and Movie App</h3>
-									</header>
-								<ul class="statistics">
-									
-									<span class="image fit">
-										
-											<img src="images/React Move and TV Show App.PNG" alt="React App" />
-										
-    									
-									</span>
-								</ul>
-								<p class="content">This React.js application allows users to explore a wide collection of movies and TV shows using real-time data fetched from The Movie Database (TMDb) API.
-													The project is designed with a clean, responsive interface that makes discovering entertainment easy and enjoyable.
-													Users can browse popular, trending, and top-rated titles, view detailed information such as posters, release dates, and descriptions, and seamlessly build their own personalized favorites list. 
-													With intuitive interactions, users can add or remove movies and TV shows from their favorites, and the selections are persistently stored for a smooth user experience.</p>
-								<footer class="major">
-									<ul class="actions special" 
-    style="display: flex; justify-content: center; width: 100%; max-width: 600px; margin: 0 auto;">
-
-    
-    <li>
-        <a href="https://github.com/JodeneGarvey/ReactJS-TV-Show-and-Movie-App" 
-           target="_blank" 
-           class="button">
-           View Code
-        </a>
-    </li>
-
-</ul>
-									
-								</footer>
+									<br>
+								
 									</section>
 									<br>
 
@@ -189,8 +176,7 @@
 									</section>
 							</section>
 
-						<!-- Second Section -->
-							<section id="second" class="main special">
+						<section id="second" class="main special">
 								<header class="major">
 									<h2>Data Analysis Projects</h2>
 									<p>Airbnb Data Analytics Dashboard</p>
@@ -260,11 +246,17 @@
 									<p>Tools & Skills: Power BI, Power Query, DAX, Data Cleaning, Time-Series Analysis, Data Modeling, Map Visualization</p>
 								</header>
 								<ul class="statistics">
-									<span class="image fit">
-    									<img src="images/Uber Overview Analysis.PNG" alt="Power BI Uber Data Analysis Dashboard" />
-								</span>
+    <div class="project-slider">
+        <div class="slides">
+            <img src="images/Uber Overview Analysis.PNG" class="slide active" alt="Uber Overview Dashboard">
+            <img src="images/Uber Trip Time Analysis.PNG" class="slide" alt="Uber Time Analysis">
+            <img src="images/Uber Trip Details.PNG" class="slide" alt="Uber Details Analysis">
+        </div>
 
-								</ul>
+        <button class="nav-btn prev">&#10094;</button>
+        <button class="nav-btn next">&#10095;</button>
+    </div>
+</ul>
 								<p class="content">This project focuses on analyzing Uber trip data to uncover patterns in ride demand, peak hours, 
 													high-traffic locations, and base activity. Using Power BI, I cleaned and transformed the dataset, 
 													created time-based features, and developed interactive visuals that highlight hourly, daily, and 
@@ -359,6 +351,32 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const uberSlides = document.querySelectorAll('.project-slider .slide');
+    const nextBtn = document.querySelector('.project-slider .next');
+    const prevBtn = document.querySelector('.project-slider .prev');
+
+    let index = 0;
+
+    function showSlide(i) {
+        uberSlides.forEach(slide => slide.classList.remove('active'));
+        uberSlides[i].classList.add('active');
+    }
+
+    nextBtn.addEventListener('click', () => {
+        index = (index + 1) % uberSlides.length;
+        showSlide(index);
+    });
+
+    prevBtn.addEventListener('click', () => {
+        index = (index - 1 + uberSlides.length) % uberSlides.length;
+        showSlide(index);
+    });
+
+});
+</script>
 
 	</body>
 </html>
