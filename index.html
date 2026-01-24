@@ -240,33 +240,7 @@
 										<li><a href="https://github.com/JodeneGarvey/Sales-Insight-Power-BI-Project" class="button">View Project</a></li>
 									</ul>
 								</footer>
-								<header class="major">
-									
-									<p>Uber Data Analysis</p>
-									<p>Tools & Skills: Power BI, Power Query, DAX, Data Cleaning, Time-Series Analysis, Data Modeling, Map Visualization</p>
-								</header>
-								<ul class="statistics">
-    <div class="project-slider">
-        <div class="slides">
-            <img src="images/Uber Overview Analysis.PNG" class="slide active" alt="Uber Overview Dashboard">
-            <img src="images/Uber Trip Time Analysis.PNG" class="slide" alt="Uber Time Analysis">
-            <img src="images/Uber Trip Details.PNG" class="slide" alt="Uber Details Analysis">
-        </div>
-
-        <button class="nav-btn prev">&#10094;</button>
-        <button class="nav-btn next">&#10095;</button>
-    </div>
-</ul>
-								<p class="content">This project focuses on analyzing Uber trip data to uncover patterns in ride demand, peak hours, 
-													high-traffic locations, and base activity. Using Power BI, I cleaned and transformed the dataset, 
-													created time-based features, and developed interactive visuals that highlight hourly, daily, and 
-													monthly ride trends. The dashboard provides insights into rider behavior, geographic hotspots, and 
-													operational periods of high demand, helping stakeholders understand when and where trip activity is highest.</p>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="https://github.com/JodeneGarvey/Uber-Power-BI-Data-Analysis-Project" class="button">View Project</a></li>
-									</ul>
-								</footer>
+								
 								<header class="major">
 									<p>Netflix Data Analysis Project</p>
 									<p>Tools & Skills: Python, Pandas, NumPy, Plotly, TextBlob, Data Cleaning, 
@@ -351,32 +325,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
 
-    const uberSlides = document.querySelectorAll('.project-slider .slide');
-    const nextBtn = document.querySelector('.project-slider .next');
-    const prevBtn = document.querySelector('.project-slider .prev');
-
-    let index = 0;
-
-    function showSlide(i) {
-        uberSlides.forEach(slide => slide.classList.remove('active'));
-        uberSlides[i].classList.add('active');
-    }
-
-    nextBtn.addEventListener('click', () => {
-        index = (index + 1) % uberSlides.length;
-        showSlide(index);
-    });
-
-    prevBtn.addEventListener('click', () => {
-        index = (index - 1 + uberSlides.length) % uberSlides.length;
-        showSlide(index);
-    });
-
-});
-</script>
 
 	</body>
 </html>
