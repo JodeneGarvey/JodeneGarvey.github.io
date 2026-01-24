@@ -330,55 +330,7 @@ input, select, textarea {
 	hr {
 		border-bottom-color: rgba(255, 255, 255, 0.35);
 	}
-/* Slider */
-	.project-slider {
-    position: relative;
-    max-width: 900px;
-    margin: 2rem auto;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
 
-.slides {
-    position: relative;
-}
-
-.slide {
-    width: 100%;
-    display: none;
-    transition: opacity 0.4s ease-in-out;
-}
-
-.slide.active {
-    display: block;
-}
-
-.nav-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.6);
-    color: #fff;
-    border: none;
-    font-size: 22px;
-    padding: 10px 14px;
-    cursor: pointer;
-    border-radius: 50%;
-    z-index: 10;
-}
-
-.nav-btn.prev {
-    left: 12px;
-}
-
-.nav-btn.next {
-    right: 12px;
-}
-
-.nav-btn:hover {
-    background: rgba(0,0,0,0.85);
-}
 
 	.image.fit img {
     width: 100%;
