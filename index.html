@@ -49,10 +49,11 @@
 										<header class="major">
 											<h2>Introduction</h2>
 										</header>
-										<p>Results-driven Data Analyst and Web Developer 
-							with hands-on experience in ASP.NET Core, SQL, Power BI, and Tableau.
-							 Adept at transforming data into actionable insights and building responsive, full-stack web applications.
-							  Recognized for problem-solving, adaptability, and delivering reliable, data-informed business solutions.</p>
+										<p>I'm Jodene Garvey a Computer Science graduate from the University of Technology, Jamaica.
+											I am a detail-oriented and motivated technology professional with a strong foundation in data analysis,
+											 web development, and technical support. I have hands-on experience building responsive, full stack web application using
+											  ASP.NET Core, C#, React‑JS, HTML, CSS and JavaScript.
+											  My skill set also include using tools such as  Power BI, Tableau, Excel and SQL to transform data into actionable insights.</p>
 										<ul class="actions">
 											<li><a href="https://www.linkedin.com/in/jodene-garvey-95140812b/" class="button">About Me</a></li>
 											<li><a href="assets/JODENE PATRICE GARVEY.pdf" target="_blank" class="button primary">View Resume</a></li>
@@ -60,6 +61,35 @@
 									</div>
 									<span class="image"><img src="images/Profile Picture.jpg" alt="" /></span>
 								</div>
+								<header class="major">
+									<h2>Tech Tools</h2>
+
+									<section class="tools-section">
+
+    									<div class="tools-container">
+
+      <!-- Frontend -->
+      										<div class="tool-card frontend">
+        										<h3>Frontend</h3>
+        										<p>HTML, CSS, JavaScript, React</p>
+      										</div>
+
+      <!-- Backend -->
+      										<div class="tool-card backend">
+        										<h3>Backend</h3>
+        										<p>C#, ASP.NET, REST APIs</p>
+      										</div>
+
+      <!-- Data -->
+      										<div class="tool-card data">
+        										<h3>Data Analytics</h3>
+        										<p>Power BI, Tableau, Excel, SQL, DAX</p>
+      										</div>
+      
+
+    									</div>
+  									</section>
+								</header>
 							</section>
 
 						<!-- First Section -->
@@ -173,7 +203,7 @@
 <section class="react-project">
 	<br>
 									<header class="major">
-									<h3>PetPaw Ecommerce website</h3>
+									<h3>PetPaw Ecommerce Website</h3>
 									</header>
 								<ul class="statistics">
 									
@@ -277,8 +307,11 @@
 							</section>
 
 						<section id="second" class="main special">
+								
 								<header class="major">
+
 									<h2>Data Analysis Projects</h2>
+									
 									<p>Airbnb Data Analytics Dashboard</p>
 									<p>Tools & Skills: Tableau, Data Visualization, Data Cleaning, 
 										Exploratory Data Analysis (EDA), Dashboard Design</p>
@@ -297,6 +330,40 @@
 								<footer class="major">
 									<ul class="actions special">
 										<li><a href="https://public.tableau.com/app/profile/jodene.garvey/viz/AirBnBFullProject_17611514749990/AirBnB" class="button">View Dashboard</a></li>
+									</ul>
+								</footer>
+
+								<header class="major">
+
+									<p>Uber Data Analysis Project</p>
+									<p>Tools and Skills: Power BI, Power Query, DAX, Excel</p>
+								</header>
+								
+
+								<div class="slider">
+    
+    								<div class="slides" id="slideContainer">
+        								<img src="images/Uber Overview Analysis.PNG" alt="Overview">
+        								<img src="images/Uber Trip Time Analysis.PNG" alt="Trip Time">
+        								<img src="images/Uber Trip Details.PNG" alt="Details">
+    								</div>
+
+    							<button class="prev" onclick="moveSlide(-1)">❮</button>
+    							<button class="next" onclick="moveSlide(1)">❯</button>
+
+								</div>
+
+
+								<p class="content">An interactive Power BI dashboard to analyze Uber trip data and uncover 
+									actionable insights into ride patterns, customer behavior, and operational trends. 
+									The project focuses on transforming raw data into meaningful visualizations that support 
+									data-driven decision-making. Using Power Query, I performed data cleaning and transformation 
+									to ensure accuracy and consistency across datasets. Key features include interactive visualizations, 
+									geospatial mapping, and drill-through capabilities, enabling users to explore trends in depth. 
+									</p>
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="https://github.com/JodeneGarvey/Uber-Power-BI-Data-Analysis-Project" class="button">View Project</a></li>
 									</ul>
 								</footer>
 								<header class="major">
@@ -426,6 +493,28 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+			let currentSlide = 0;
+			
+			function moveSlide(direction){   
+				 const slides = document.getElementById("slideContainer");   
+				const totalSlides = 3;    
+				currentSlide += direction;    
+				if(currentSlide < 0){       
+					 currentSlide = totalSlides -1;   
+					  }    
+					  if(currentSlide >= totalSlides){
+						        currentSlide = 0;    
+								}    
+								slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+							}
+
+							setInterval(()=>{
+   								moveSlide(1);
+							},4000);
+			</script>
+
 
 
 	</body>
