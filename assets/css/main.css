@@ -331,6 +331,7 @@ input, select, textarea {
 		border-bottom-color: rgba(255, 255, 255, 0.35);
 	}
 
+
 	.image.fit img {
     width: 100%;
     height: auto;
@@ -608,6 +609,98 @@ input, select, textarea {
 				.row.gtr-200.gtr-uniform > * {
 					padding-top: 3em;
 				}
+
+				.slider{
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Critical: track width based on children, not theme styles */
+.slides{
+    display: flex;
+    flex-wrap: nowrap;       /* prevents wrapping */
+    width: 100%;
+    transition: transform .5s ease-in-out;
+}
+
+/* Critical: each slide is EXACTLY one viewport wide */
+.slides img{
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+}
+
+.prev,.next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:10;
+}
+
+
+.prev{
+    left:10px;
+}
+
+.next{
+    right:10px;
+}
+
+.tools-section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .tools-section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .tools-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .tool-card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .tool-card h3 {
+      margin-bottom: 10px;
+      color: #0077b6;
+    }
+
+    .tool-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    /* Optional category colors */
+    .frontend { border-top: 4px solid #4caf50; }
+    .backend { border-top: 4px solid #ff9800; }
+    .data { border-top: 4px solid #2196f3; }
+    .tools { border-top: 4px solid #9c27b0; }
 
 		@media screen and (max-width: 1680px) {
 
